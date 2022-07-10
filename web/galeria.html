@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herrero Gamer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="icon" href="../imagenes/herrerogamer.png">
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,17 +14,34 @@
     <script src="https://kit.fontawesome.com/709320db35.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="barra">
-        <nav>
-            <ul class="nav">
-                <li class="navegacion img"><a href="../index.html"><img src="../imagenes/herrerogamer.png" alt="HerreroGamer"></a></li>
-                <li class="navegacion"> <a href="../index.html" class="nav-text">Inicio</a></li>
-                <li class="navegacion"><a href="./sobre-nosotros.html" class="nav-text">Sobre nosotros</a></li>
-                <li class="navegacion"><a href="./contactanos.html" class="nav-text">Contactanos</a></li>
-                <li class="navegacion"><a href="#" class="nav-text">Galeria</a></li>
-                <li class="navegacion"><a href="./ubicaion.html" class="nav-text">Ubicacion</a></li>
-            </ul>
-        </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white navegacion" href="../index.html"><img src="../imagenes/herrerogamer.png" alt="HerreroGamer"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="../web/sobre-nosotros.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="../web/contactanos.html">Contactanos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="../web/galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="../web/ubicaion.html">Ubicacion</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 <main>
     <section>
@@ -31,22 +49,77 @@
             <h1>Galeria</h1>
             <p class="h2p">Todas estas sillas y escritorios fueron hechos por nosotros</p>
         </div>
-        <div class="galeria-img">
-            <img src="../imagenes/silla1.jpeg" alt="silla1"class="img-galeria-tall">
-            <img src="../imagenes/silla2.jpeg" alt="silla2"class="img-galeria-tall">
-            <img src="../imagenes/silla3.jpeg" alt="silla3"class="img-galeria-tall">
-            <img src="../imagenes/silla4.jpeg" alt="silla4"class="img-galeria-tall">
-            <img src="../imagenes/silla5.jpeg" alt="silla5"class="img-galeria-tall">
-            <img src="../imagenes/silla6.jpeg" alt="silla6"class="img-galeria-tall">
-            <img src="../imagenes/silla7.jpg" alt="silla7" class="img-galeria-tall">
-            <img src="../imagenes/silla8.jpg" alt="silla8" class="img-galeria-tall">
-            <img src="../imagenes/escritorio1.jpeg" alt="escritorio1" class="img-galeria-wide">
-            <img src="../imagenes/escritorio2.jpeg" alt="escritorio2" class="img-galeria-wide">
-            <img src="../imagenes/escritorio3.jpeg" alt="escritorio3" class="img-galeria-wide">
-            <img src="../imagenes/escritorio4.jpeg" alt="escritorio4" class="img-galeria-wide">
-            <img src="../imagenes/escritorio5.jpeg" alt="escritorio5" class="img-galeria-wide">
-            <img src="../imagenes/escritorio6.jpeg" alt="escritorio6" class="img-galeria-wide">
-        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <img src="../imagenes/silla1.jpeg" class="d-block" class="img-fluid" alt="silla1">
+              </div>
+              <div class="carousel-item ">
+                <img src="../imagenes/silla2.jpeg" class="d-block" class="img-fluid" alt="silla2">
+              </div>
+              <div class="carousel-item ">
+                <img src="../imagenes/silla3.jpeg" class="d-block" class="img-fluid" alt="silla3">
+              </div>
+              <div class="carousel-item ">
+                <img src="../imagenes/silla4.jpeg" class="d-block" class="img-fluid" alt="silla4">
+              </div>
+              <div class="carousel-item ">
+                <img src="../imagenes/silla5.jpeg" class="d-block" class="img-fluid" alt="silla5">
+              </div>
+              <div class="carousel-item ">
+                <img src="../imagenes/silla7.jpeg" class="d-block" class="img-fluid" alt="silla6">
+              </div>
+              <div class="carousel-item ">
+                <img src="../imagenes/silla8.jpg" class="d-block" class="img-fluid" alt="silla7">
+              </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="desktop carousel-item  active">
+                <img src="../imagenes/escritorio1.jpeg" class="d-block" alt="escritorio1">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/escritorio2.jpeg" class="d-block" alt="escritorio2">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/escritorio5.jpeg" class="d-block" alt="escritorio3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
 </main>
 <footer class="footer-all">
@@ -69,5 +142,7 @@
         </div>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
