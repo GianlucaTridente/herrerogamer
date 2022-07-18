@@ -92,13 +92,12 @@ body{
     text-align: center;
 }
 
-.img-one{
+/* .img-one{
     border:6px solid #6E8898;
     border-radius: 6px;
     margin-bottom: 6px;  
     width: fit-content;
-
-}
+} */
 
 .card{
     width: 22rem;
