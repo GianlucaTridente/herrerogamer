@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     margin-right: 20%;
-    justify-content: center; 
+    justify-content: $centrado; 
 
     h3{
         font-weight:900;
@@ -55,7 +55,7 @@
 
     .img-grupo{
         display: flex;
-        justify-content: center;
+        justify-content: $centrado;
 
     }
 

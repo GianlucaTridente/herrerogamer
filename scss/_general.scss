@@ -16,14 +16,14 @@ body{
     margin: 0 auto;
     width: fit-content;
     display: flex;
-    align-items: center;
+    align-items: $centrado;
     padding: 10px;
 }
 
 .barra{
     z-index: 100;
     display: flex;
-    justify-content:center;
+    justify-content:$centrado;
     border-bottom: solid #0d212c;
     position: sticky;
     top: 0;
@@ -57,7 +57,7 @@ body{
 }
 
 .h2p{
-    text-align: $centrado-texto;
+    text-align: $centrado;
 }
 
 .nav-text{
@@ -65,7 +65,7 @@ body{
 }
 
 h1{
-    text-align: center;
+    text-align: $centrado;
     color: #1c3542;
 }
 
@@ -114,7 +114,7 @@ h2{
             color: #fff;
             margin-right: 10px;
             background-color: #0d2033;
-            text-align: center;
+            text-align: $centrado;
             transition: all 300ms ease;
 
             &:hover{
@@ -126,7 +126,7 @@ h2{
     .grupo2{
         background-color: #0a1a2a;
         padding: 15px 10px;
-        text-align: center;
+        text-align: $centrado;
         color: #fff;
 
         small{
