@@ -1,0 +1,38 @@
+/* sobre nosotros */
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-grupo{
+    margin-left: 25%;
+}
+
+.col-md-8{
+    margin: auto;
+}
+
+@media screen and (max-width:800px){
+    .img-grupo{
+        display: flex;
+        justify-content: $centrado;
+
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .col-md-8{
+        width: 100%;
+    }
+
+    .img-grupo{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .img-so{
+        width: 25%;
+    }
+}

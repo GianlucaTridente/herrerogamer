@@ -16,10 +16,12 @@ body {
   align-items: center;
   padding: 10px; }
 
+.barra, .entrada-text {
+  display: flex;
+  justify-content: center; }
+
 .barra {
   z-index: 100;
-  display: flex;
-  justify-content: center;
   border-bottom: solid #0d212c;
   position: sticky;
   top: 0;
@@ -33,11 +35,11 @@ body {
     background: #05111d;
     border-radius: 7px;
     padding: 6px 6px;
-    border: solid 1px white; }
+    border: solid 1px #fff; }
   .navegacion a {
     text-decoration: none;
     font-size: 17px;
-    color: white; }
+    color: #fff; }
   .navegacion img {
     width: 50px; }
     .navegacion img:hover {
@@ -105,16 +107,19 @@ h2 {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 0;
   grid-template-rows: repeat(1, 1fr);
   margin-bottom: 50px; }
   .entrada div video {
     width: 54%; }
 
-.entrada-text {
+.barra, .entrada-text {
   display: flex;
-  flex-direction: column;
-  margin-right: 20%;
   justify-content: center; }
+
+.entrada-text {
+  flex-direction: column;
+  margin-right: 20%; }
   .entrada-text h3 {
     font-weight: 900;
     margin-bottom: 50px;
@@ -177,3 +182,149 @@ h2 {
     flex-direction: column; }
   .navegacion {
     margin: 0; } }
+
+/* contactanos */
+.form {
+  background: #044552;
+  background: linear-gradient(81deg, #044552 0%, #0b5275 25%, #269fd2 61%, #0068c2 100%);
+  border-radius: 1em;
+  width: 80%;
+  max-width: 400px;
+  padding: 56px 24px;
+  margin: 10px auto; }
+  .form-container {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%; }
+  .form-input {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 13px 16px;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 4px; }
+    .form-input-text {
+      resize: none;
+      padding: 29px 16px;
+      margin-bottom: 8px; }
+
+.contactos {
+  text-align: center;
+  color: #efefef; }
+
+.send {
+  font: inherit;
+  background: #044552;
+  background: linear-gradient(81deg, #044552 0%, #0b5275 25%, #269fd2 61%, #0068c2 100%);
+  color: #fff;
+  border: none;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 11px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 1s ease-in; }
+  .send:hover {
+    background: rgba(3, 77, 125, 0.798); }
+
+@media screen and (max-width: 800px) {
+  .form {
+    padding: 56px 16px; } }
+
+/* sobre nosotros */
+.nosotros {
+  display: flex;
+  flex-direction: column; }
+
+.img-grupo {
+  margin-left: 25%; }
+
+.col-md-8 {
+  margin: auto; }
+
+@media screen and (max-width: 800px) {
+  .img-grupo {
+    display: flex;
+    justify-content: center; } }
+
+@media screen and (max-width: 750px) {
+  .col-md-8 {
+    width: 100%; }
+  .img-grupo {
+    width: 50%; } }
+
+@media screen and (max-width: 624px) {
+  .img-so {
+    width: 25%; } }
+
+/* productos */
+.pr-i {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.galeria-img {
+  width: 80%;
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, auto));
+  grid-auto-rows: minmax(400px, auto);
+  grid-auto-flow: dense;
+  gap: 80px;
+  padding-top: 30px; }
+  .galeria-img-2 {
+    width: 80%;
+    margin: 0 auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, auto));
+    grid-auto-rows: minmax(400px, auto);
+    grid-auto-flow: dense;
+    gap: 80px;
+    padding-top: 30px; }
+    .galeria-img-2 .img-galeria-wide {
+      transition: all 500ms ease; }
+      .galeria-img-2 .img-galeria-wide:hover {
+        width: 725px;
+        margin: -6px -6px; }
+  .galeria-img img {
+    transition: all 500ms ease; }
+    .galeria-img img:hover {
+      width: 330px;
+      margin: -6px -6px; }
+
+.img-galeria-tall {
+  border-radius: 7px;
+  width: 100%; }
+
+.img-galeria-wide {
+  grid-column: span 2;
+  border-radius: 7px;
+  width: 100%; }
+
+@media screen and (max-width: 750px) {
+  .galeria-img {
+    display: flex;
+    flex-wrap: wrap; }
+  .galeria-img-2 {
+    display: flex;
+    flex-wrap: wrap; } }
+
+/* ubicacion */
+.mapa {
+  width: 800px;
+  height: 600px; }
+
+@media screen and (max-width: 800px) {
+  .mapa {
+    width: 600px;
+    height: 400px; } }
+
+@media screen and (max-width: 624px) {
+  .mapa {
+    display: none; } }
+
+.barra, .entrada-text {
+  display: flex;
+  justify-content: center; }

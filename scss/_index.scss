@@ -1,7 +1,6 @@
 .entrada{
     width: $completo;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    @include grid (0);
     grid-template-rows:repeat(1, 1fr);
     margin-bottom: 50px;
 
@@ -10,11 +9,13 @@
     }
 }
 
+@import './extends';
+
 .entrada-text{
-    display: flex;
+    @extend %flexCenter;
     flex-direction: column;
     margin-right: 20%;
-    justify-content: $centrado; 
+
 
     h3{
         font-weight:900;

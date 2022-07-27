@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: $color-principal;
+    background-color: map-get($colores, "color-principal")
 }
 
 /* barra de navegacion */
@@ -20,14 +20,15 @@ body{
     padding: 10px;
 }
 
+@import './extends';
+
 .barra{
     z-index: 100;
-    display: flex;
-    justify-content:$centrado;
-    border-bottom: solid #0d212c;
+    @extend %flexCenter;
+    border-bottom: solid map-get($colores, "color-borde");;
     position: sticky;
     top: 0;
-    background-color: #0b3044;
+    background-color: map-get($colores, "color-fondo-nav");
 }
 
 .navegacion{
@@ -39,13 +40,13 @@ body{
         background: #05111d;
         border-radius: 7px;
         padding: 6px 6px;
-        border: solid 1px white;
+        border: solid 1px map-get($colores, "color-letra-nav");
     }
      
     a{
         text-decoration: none;
         font-size: 17px;
-        color: white;
+        color: map-get($colores, "color-letra-nav");
     }
     img{
         width: 50px;
@@ -66,12 +67,12 @@ body{
 
 h1{
     text-align: $centrado;
-    color: #1c3542;
+    color: map-get($colores, "color-h1");
 }
 
 .parrafos{
     font-size: 19px;
-    color: #142730;
+    color: map-get($colores, "color-parrafos");
     margin-left: 3px;
 }
 
@@ -83,20 +84,18 @@ h2{
 
 .footer-all{
     width: $completo;
-    background-color: #0a141d;
+    background-color: map-get($colores, "color-fondo-footer");
 
     .grupo1{
         width: $completo;
         max-width: 1200px;
         margin: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
+        @include grid (50px);
         padding: 45px 0px;
 
         .box {
             h2{
-                color: #fff;
+                color: map-get($colores, "color-letra-nav");;
                 margin-bottom: 25px;
                 font-size: 20px;
             }
@@ -111,7 +110,7 @@ h2{
             width: 45px;
             height: 45px;
             line-height: 45px;
-            color: #fff;
+            color: map-get($colores, "color-letra-nav");
             margin-right: 10px;
             background-color: #0d2033;
             text-align: $centrado;
@@ -127,7 +126,7 @@ h2{
         background-color: #0a1a2a;
         padding: 15px 10px;
         text-align: $centrado;
-        color: #fff;
+        color: map-get($colores, "color-letra-nav");
 
         small{
             font-size: 15px;

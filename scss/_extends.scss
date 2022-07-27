@@ -1,0 +1,10 @@
+%flexCenter{
+    display: flex;
+    justify-content:$centrado;
+}
+
+@mixin grid ($gap) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gap;
+}

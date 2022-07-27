@@ -1,0 +1,24 @@
+index
+keywords: silla, sillas, gamer, silla gamer, sillas gamers, butacas de auto, emprendimiento, silla reclinable
+description: Sillas gamers de alta calidad hechas con butacas de autos a un precio economico
+titulo: HerreroGamer
+
+ubicion:
+keywords: silla, sillas, gamer, silla gamer, sillas gamers, butacas de auto, emprendimiento, silla reclinable
+description: Actualmente no tenemos un local fijo pero si podes pedir tu silla gamer y te la mandamos a tu domicilio
+titulo: HerreroGamer - Ubicacion
+
+sobre nosotros:
+keywords: silla, sillas, gamer, silla gamer, sillas gamers, butacas de auto, emprendimiento, silla reclinable
+description: Somo unas pareja que tuvo la idea de usar butacas de autos como sillas, ya que eran bastantes comodas a un buen precio-economico, los dos trabajamos en equipo armandolas desde 0.
+titulo: HerreroGamer - Sobre nosotros
+
+productos
+keywords: silla, sillas, gamer, silla gamer, sillas gamers, butacas de auto, emprendimiento, silla reclinable
+description: Productos hechos por nosotros - Sillas gamer y ahora escritorios personalizados
+titulo: HerreroGamer - Productos
+
+contactanos:
+keywords: silla, sillas, gamer, silla gamer, sillas gamers, butacas de auto, emprendimiento, silla reclinable
+description: Contactanos para pedir tu silla gamer hechas con butacas de autos - Llega a tu casa en menos de 72hs
+titulo: HerreroGamer - Contactanos

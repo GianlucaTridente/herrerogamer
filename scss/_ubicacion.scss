@@ -1,0 +1,20 @@
+/* ubicacion */
+
+.mapa{
+    width: 800px;
+    height: 600px;
+}
+
+@media screen and (max-width:800px){
+    .mapa{
+        width: 600px;
+        height:400px;
+    } 
+
+}
+
+@media screen and (max-width: 624px) {
+    .mapa{
+        display: none;
+    }
+}

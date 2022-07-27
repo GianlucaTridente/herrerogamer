@@ -1,0 +1,73 @@
+/* productos */
+
+.pr-i{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.galeria-img{
+    width: 80%;
+    margin: 0 auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, auto));
+    grid-auto-rows: minmax(400px, auto);
+    grid-auto-flow: dense;
+    gap: 80px;
+    padding-top: 30px;
+    
+    &-2{
+        width: 80%;
+        margin: 0 auto 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, auto));
+        grid-auto-rows: minmax(400px, auto);
+        grid-auto-flow: dense;
+        gap: 80px;
+        padding-top: 30px;
+
+        .img-galeria-wide{
+            transition: all 500ms ease;
+
+            &:hover{
+                width: 725px;
+                margin: -6px -6px;
+            }
+        }
+    }
+    img{
+        transition: all 500ms ease;
+
+        &:hover{
+            width: 330px;
+            margin: -6px -6px;
+        }
+    }
+
+    
+}
+
+.img-galeria-tall{
+    border-radius: 7px;
+    width: $completo;
+}
+
+.img-galeria-wide{
+    grid-column: span 2;
+    border-radius: 7px;
+    width: $completo;
+}
+
+@media screen and (max-width: 750px) {
+    .galeria-img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .galeria-img-2{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+
+}
