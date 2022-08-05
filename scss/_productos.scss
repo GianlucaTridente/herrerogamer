@@ -27,20 +27,19 @@
         padding-top: 30px;
 
         .img-galeria-wide{
-            transition: all 500ms ease;
+        
+            transition: all 500ms;
 
             &:hover{
-                width: 725px;
-                margin: -6px -6px;
+                transform: scale(1.03);  
             }
         }
     }
     img{
-        transition: all 500ms ease;
+        transition: all 500ms;
 
         &:hover{
-            width: 330px;
-            margin: -6px -6px;
+            transform: scale(1.04);
         }
     }
 

@@ -284,15 +284,13 @@ h2 {
     gap: 80px;
     padding-top: 30px; }
     .galeria-img-2 .img-galeria-wide {
-      transition: all 500ms ease; }
+      transition: all 500ms; }
       .galeria-img-2 .img-galeria-wide:hover {
-        width: 725px;
-        margin: -6px -6px; }
+        transform: scale(1.03); }
   .galeria-img img {
-    transition: all 500ms ease; }
+    transition: all 500ms; }
     .galeria-img img:hover {
-      width: 330px;
-      margin: -6px -6px; }
+      transform: scale(1.04); }
 
 .img-galeria-tall {
   border-radius: 7px;
@@ -312,18 +310,34 @@ h2 {
     flex-wrap: wrap; } }
 
 /* ubicacion */
+.ubicacion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .ubicacion-grid div {
+    padding-left: 30px; }
+
 .mapa {
-  width: 800px;
-  height: 600px; }
+  padding-right: 30px;
+  width: 70vw;
+  height: 70vh; }
 
 @media screen and (max-width: 800px) {
   .mapa {
-    width: 600px;
-    height: 400px; } }
+    width: 50vw;
+    height: 50vh; } }
 
 @media screen and (max-width: 624px) {
+  .ubicacion-grid {
+    grid-template-columns: repeat(1, 1fr); }
+    .ubicacion-grid div {
+      padding-left: 10px; }
   .mapa {
-    display: none; } }
+    padding-top: 10px;
+    padding-right: 10px;
+    width: 90vw;
+    height: 50vh; } }
 
 .barra, .entrada-text {
   display: flex;
